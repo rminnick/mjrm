@@ -18,7 +18,10 @@ body {
   max-width: 600px;
   min-height: 100%;
   padding: 1em;
-  background: #ffffff
+  background: #ffffff;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  color: #222;
 }
 
 html {
@@ -98,6 +101,95 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+.logo-container {
+  padding: 2em 0 1.5em 0;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .logo-container {
+    padding: 1.2em 0 1em 0;
+  }
+}
+
+.projects-section {
+  margin: 2em 0;
+  font-family: 'Manrope', sans-serif;
+}
+
+.projects-section h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+  font-weight: 700;
+  text-align: center;
+  font-family: 'Manrope', sans-serif;
+}
+
+.projects-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  align-items: center;
+}
+
+.project-card {
+  background: #f7f7f7;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 1.5em 2em;
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: box-shadow 0.2s;
+}
+
+.project-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+
+.project-card-header {
+  font-size: 1.3em;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  color: #333;
+  font-family: 'Manrope', sans-serif;
+}
+
+.project-card-body p {
+  margin: 0 0 1em 0;
+  color: #444;
+  font-size: 1em;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+}
+
+.project-card-link {
+  color: #1976d2;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid #1976d2;
+  transition: color 0.2s, border-color 0.2s;
+  font-family: 'Manrope', sans-serif;
+}
+
+.project-card-link:hover {
+  color: #0d47a1;
+  border-bottom: 1px solid #0d47a1;
+}
+
+@media (max-width: 600px) {
+  .projects-cards {
+    flex-direction: column;
+    gap: 1em;
+  }
+  .project-card {
+    padding: 1em 1em;
+    max-width: 95%;
+  }
+}
 
 /* ==========================================================================
    Helper classes
