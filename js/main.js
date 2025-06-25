@@ -9,6 +9,7 @@
     const logoImg = document.querySelector('.logo-container img');
     if (enabled) {
       body.classList.add('dark-mode');
+      document.documentElement.classList.add('dark-mode');
       if (logoImg) logoImg.src = '/mjrm-white-text.png';
       if (btn && emojiSpan) {
         emojiSpan.textContent = '☀️';
@@ -22,6 +23,7 @@
       }
     } else {
       body.classList.remove('dark-mode');
+      document.documentElement.classList.remove('dark-mode');
       if (logoImg) logoImg.src = '/mjrm-logo.svg';
       if (btn && emojiSpan) {
         emojiSpan.textContent = '🌙';
