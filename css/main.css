@@ -137,19 +137,22 @@ body.dark-mode .project-card {
 }
 
 html.dark-mode .project-card-body,
-body.dark-mode .project-card-body {
-  color: #f3f6fb;
+body.dark-mode .project-card-body p {
+  color: #fff;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.22);
 }
 
 html.dark-mode .project-card-header,
 body.dark-mode .project-card-header {
   color: #fff;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.35);
 }
 
 html.dark-mode .project-card-link,
 body.dark-mode .project-card-link {
-  color: #90caf9;
+  color: #fff;
   border-bottom: 1px solid #90caf9;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.18);
 }
 
 html.dark-mode .project-card-link:hover,

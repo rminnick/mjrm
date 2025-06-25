@@ -55,9 +55,8 @@
   if (userPref !== null) {
     setDarkMode(userPref === 'true');
   } else {
-    // If no preference, use system preference
+    // If no preference, use system preference (but don't persist)
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     setDarkMode(prefersDark);
-    savePref(prefersDark);
   }
 })();
