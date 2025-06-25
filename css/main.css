@@ -110,11 +110,12 @@ body.dark-mode .about-card-photo {
 }
 
 
-html {
+html, body {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
   background: #FFFFFF;
+  transition: background 0.5s cubic-bezier(.7,0,.3,1), color 0.5s cubic-bezier(.7,0,.3,1);
 }
 
 html.dark-mode, body.dark-mode {
@@ -133,6 +134,11 @@ body.dark-mode .project-card {
   color: #fff;
   box-shadow: 0 4px 16px rgba(0,0,0,0.45);
   border: 2px solid #444;
+}
+
+html.dark-mode .project-card-body,
+body.dark-mode .project-card-body {
+  color: #f3f6fb;
 }
 
 html.dark-mode .project-card-header,
