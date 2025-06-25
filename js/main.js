@@ -6,8 +6,10 @@
   const emojiSpan = btn ? btn.querySelector('.toggle-emoji') : null;
 
   function setDarkMode(enabled, animate = false) {
+    const logoImg = document.querySelector('.logo-container img');
     if (enabled) {
       body.classList.add('dark-mode');
+      if (logoImg) logoImg.src = '/mjrm-white-text.png';
       if (btn && emojiSpan) {
         emojiSpan.textContent = '☀️';
         btn.childNodes[1].nodeValue = ' Light Mode';
@@ -20,6 +22,7 @@
       }
     } else {
       body.classList.remove('dark-mode');
+      if (logoImg) logoImg.src = '/mjrm-logo.svg';
       if (btn && emojiSpan) {
         emojiSpan.textContent = '🌙';
         btn.childNodes[1].nodeValue = ' Dark Mode';

@@ -64,6 +64,10 @@ body.dark-mode {
   color: #e0e0e0;
 }
 
+body.dark-mode html {
+  background: #181a1b;
+}
+
 body.dark-mode .about-section,
 body.dark-mode .projects-section {
   color: #e0e0e0;
@@ -71,8 +75,13 @@ body.dark-mode .projects-section {
 
 body.dark-mode .about-card,
 body.dark-mode .project-card {
-  background: #232526;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  background: #202124;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.45);
+  border: 2px solid #444;
+}
+
+body.dark-mode .project-card {
+  color: #fff;
 }
 
 body.dark-mode .about-card-header {
@@ -105,8 +114,14 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
-  background: #FFFFFF
+  background: #FFFFFF;
 }
+
+html.dark-mode, body.dark-mode {
+  background: #181a1b !important;
+  color: #e0e0e0;
+}
+
 
 /*
  * Remove text-shadow in selection highlight:
